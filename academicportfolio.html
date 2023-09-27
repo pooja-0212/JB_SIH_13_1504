@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Academic Portfolio</title>
+<center> <h1> Academic Portfolio</h1></center>
+<body>
+    <center>
+<img src="https://cdn.editage.com/insights/editagecom/production/styles/detail_page_image/public/good%20research%20paper%20title%20%28resized%29_0.jpg?itok=9ZCGj0Qz" background-repeat="no-repeat" background-size="cover"/>
+</head>
+<br>
+<style>
+    #cap{
+        font-size: 20px;
+        text-align: left;
+    }
+</style>
+<h2 id ="cap"><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Research and Publications </b> 
+<form name=f>
+<table align=center border=0 width=65% height=100%>
+<h3 align=center></h3>
+<tr>
+<td>Paper Title:</td>
+<td  ><input type=text name=paperTitle></td>
+</td>
+</tr>
+<tr>
+<td>Authors:</td>
+<td  ><input type=text name=authors></td>
+
+</tr>
+<tr>
+<td>Publication Date:</td>
+<td  ><input type=text name=publicationDate></td>
+
+</tr>
+<tr>
+<td>Publication Source:</td>
+<td><input type=text name=publicationSource></td>
+<td><p id= "ph"></p></td>
+</tr>
+<tr>
+<td>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <label for="file"> Upload Abstract:</label> 
+    <input type="file" id="file" name="file" accept=".pdf, .doc, .docx" required>
+    <br>
+    <br>
+    <input type="submit" value="Upload">
+</form>
+</td>
+</tr>
+</table>
+<br>
+<table align=center border=0 width=50% height=10%>
+    <tr>
+    <h2 id ="cap"><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teaching Experience </h2></b> 
+    <td>Experience:</td>
+    <td><input type=text name=exp></td>
+    </tr>
+</table>
+ <br>
+<table align=center border=0 width=50% height=10%>
+    <tr>
+    <h2 id ="cap"><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Advanced Degrees </b> 
+    </tr>
+ <tr>
+    <td>Degree:</td>
+    <td> <input type=text name=deg></td></tr>
+    <tr>
+        <td>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file">Degree Certificate:</label> 
+        <input type="file" id="file" name="file" accept=".pdf, .doc, .docx" required>
+        </form>
+        </td>
+    </tr>
+    <tr>
+    <td><input type=button value="Submit" onclick=validate()></td>
+    <td><input type=reset value="Reset"></td>
+    </tr>
+</table>
+</form>
+</center>
+</body>
+</html>
